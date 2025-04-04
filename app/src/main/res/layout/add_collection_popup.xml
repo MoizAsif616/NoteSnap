@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:id="@+id/add_collection_popup"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="20dp"
+  android:background="@drawable/dialogue_bg"
+  android:theme="@style/Theme.NoteSnap">
+
+  <!-- Material Design Input Field -->
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/text_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:hint="Collection name"
+    app:boxStrokeColor="@color/orange"
+    app:boxStrokeWidth="1dp"
+    app:hintTextColor="@color/orange"
+    android:layout_marginHorizontal="15dp"
+    >
+<!--    app:boxCornerRadius="16dp">  &lt;!&ndash; Rounded corners &ndash;&gt;-->
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edit_collection_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="?attr/colorOnSecondary"/>
+<!--      android:background="?attr/colorSecondary" />-->
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Material Design Button -->
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_create"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:textSize="17sp"
+    android:text="Create"
+    app:backgroundTint="?attr/colorPrimary"
+    app:cornerRadius="10dp"
+    android:layout_gravity="center_horizontal"/>
+</LinearLayout>

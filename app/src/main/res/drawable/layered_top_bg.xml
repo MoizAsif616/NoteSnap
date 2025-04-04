@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Background (your rounded corners) -->
+  <item android:drawable="@drawable/item_bg"/>
+
+  <!-- Foreground image (centered and cropped) -->
+  <item>
+    <bitmap
+      android:src="@drawable/default_folder_img"
+      android:gravity="center"/>
+  </item>
+</layer-list>

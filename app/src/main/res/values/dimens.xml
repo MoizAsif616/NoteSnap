@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <dimen name="item_width_percent">44.5%p</dimen>
+  <dimen name="item_height_percent">20%p</dimen>
+  <dimen name="five_perc">5%p</dimen>
+
+</resources>

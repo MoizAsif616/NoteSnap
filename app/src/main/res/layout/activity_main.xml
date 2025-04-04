@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/activity_main"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1"
+  android:background="@color/white">
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:layout_weight="0.08">
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="My Collections"
+      android:textColor="?attr/colorOnPrimary"
+      android:textSize="30sp"
+      android:textStyle="bold"/>
+    <ImageButton
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_gravity="end"
+      android:layout_marginHorizontal="20dp"
+      android:src="@drawable/search"
+      android:background="@android:color/transparent"
+      android:scaleType="centerCrop"
+      android:adjustViewBounds="true"/>
+
+  </androidx.appcompat.widget.Toolbar>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.92"
+    android:background="?attr/colorSecondary">
+    
+
+    <ViewSwitcher
+      android:id="@+id/viewSwitcher"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <!-- RecyclerView (Default) -->
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collections_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="0dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="5dp"/>
+
+      <!-- Empty State (Directly copied from empty_state.xml) -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="No collections found"
+          android:layout_gravity="center"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Tap + button to create one"/>
+      </LinearLayout>
+    </ViewSwitcher>
+
+    <ImageButton
+      android:id="@+id/add_btn"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:background="@drawable/circular_bg"
+      android:src="@drawable/add"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_margin="20dp"/>
+
+  </RelativeLayout>
+</LinearLayout>

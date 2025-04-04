@@ -1,0 +1,11 @@
+<resources>
+  <!-- Base application theme (disables default ActionBar) -->
+  <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <!-- For Android 5.0+ (Lollipop) -->
+    <item name="android:statusBarColor">?attr/backgroundMain</item>
+
+    <!-- For light icons (use with dark backgrounds) -->
+    <item name="android:windowLightStatusBar">true</item>
+  </style>
+
+</resources>
