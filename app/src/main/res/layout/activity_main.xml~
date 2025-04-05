@@ -22,7 +22,7 @@
       android:textSize="30sp"
       android:textStyle="bold"/>
     <ImageButton
-      android:id="@+id/search_btn"
+      android:id="@+id/search-btn"
       android:layout_width="25dp"
       android:layout_height="25dp"
       android:layout_gravity="end"
